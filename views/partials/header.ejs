@@ -1,0 +1,66 @@
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">QR Codes Generator</a>
+        </li>
+    
+      </ul>
+    </div>
+    <div class="card-body">
+        <h3>Upload an excel file with a format like this</h3>
+        <div align="center">
+          <table id="excel_example">
+            <thead>
+              <tr>
+                <th>Box Id</th>
+                <th>Warehouse</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td></td><td></td><td></td></tr> 
+              <tr><td></td><td></td><td></td></tr> 
+              <tr><td></td><td></td><td></td></tr>              
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <form enctype="multipart/form-data">
+            <input id="upload" type="file" name="files[]">
+          </form>
+        </div>
+
+        <div align="center" style="margin-top: 20px;">
+          <table id="qrcodes">
+            <thead>
+              <tr>
+                <th>
+                  Boxes
+                </th>
+                <th>
+                  Location
+                </th>
+                <th>
+                  Is it done?
+                </th>
+              </tr>
+            </thead>
+            <tbody id = "qrcodes_row">
+              <!-- <tr align="center">
+                <td id = "qr_boxes">
+
+                </td>
+                <td id = "qr_locations">
+
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+
+        </div>
+      <!-- <a onclick="postData()" class="btn btn-primary">REST</a> -->
+    </div>
+  </div>
+
