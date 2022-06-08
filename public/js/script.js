@@ -1,5 +1,5 @@
-// (function(){
-//     'use strict';
+(function(){
+    'use strict';
     var app = angular.module('kawasakiApp', []);
 
     app.controller('kawasakiController', ($scope)=> {
@@ -13,7 +13,23 @@
         }
     });  
 
-// })();
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // function postData() {

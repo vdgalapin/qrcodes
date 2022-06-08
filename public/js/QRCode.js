@@ -4,7 +4,7 @@ function generateQRCode(BoxID, Whse, Location) {
     
     const tbodyRowCount = table.tBodies[0].rows.length + 1;
 
-    $("#qrcodes #qrcodes_row").append('<tr align="center"><td id = \"qr_box_' + tbodyRowCount +'\"><div id=\"box_label_' + tbodyRowCount + '\"></div></td><td id = \"loc_box_' + tbodyRowCount +'\"><div id=\"loc_label_' + tbodyRowCount + '\"></div></td><td> <button onclick="finished(this)">Done</button></td></tr>');
+    $("#qrcodes #qrcodes_row").append('<tr align="center"><td id = \"qr_box_' + tbodyRowCount +'\"><div id=\"box_label_' + tbodyRowCount + '\"></div></td><td id = \"loc_box_' + tbodyRowCount +'\"><div id=\"loc_label_' + tbodyRowCount + '\"></div></td><td> <button onclick="finished(this)">Delete</button></td></tr>');
 
 
     let Box_qrcodeContainer = document.getElementById("qr_box_" + tbodyRowCount);
